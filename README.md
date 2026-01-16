@@ -1,5 +1,7 @@
 # 📊 Dashboard — Leishmaniose Visceral Canina na RMSP (2013–2022)
 
+**Dashboard online:**: https://mariliaspereira.github.io/lvc-rmsp/
+
 Este repositório contém o código-fonte de um **dashboard interativo de visualização de dados** sobre a **Leishmaniose Visceral Canina (LVC)** na **Região Metropolitana de São Paulo (RMSP)**, abrangendo o período de **2013 a 2022**.
 
 ---
