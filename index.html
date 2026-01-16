@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Leishmaniose Visceral Canina - RMSP</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bibliotecas Necessárias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="theme-toggle">
+            <button id="toggle-theme">🌙 Modo escuro</button>
+        </div>
+
+        
+        <h1>Leishmaniose Visceral Canina</h1>
+        <p>Região Metropolitana de São Paulo (2013 - 2022)</p>
+    </header>
+
+    <main id="dashboard">
+        <section class="filters">
+            <div class="filter-group">
+                <label for="city-filter">Filtrar por Município:</label>
+                <select id="city-filter">
+                    <option value="all">Todos os Municípios</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="year-filter">Ano:</label>
+                <select id="year-filter">
+                    <option value="all">Todos os Anos</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="kpis">
+            <div class="card">
+                <h3>Total de Testes</h3>
+                <p id="total-tests">0</p>
+            </div>
+            <div class="card positive">
+                <h3>Casos Positivos</h3>
+                <p id="total-positive">0</p>
+            </div>
+            <div class="card negative">
+                <h3>Casos Negativos</h3>
+                <p id="total-negative">0</p>
+            </div>
+            <div class="card inconclusive">
+                <h3>Inconclusivos</h3>
+                <p id="total-inconclusive">0</p>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart-container">
+                <canvas id="trendChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="outcomeChart"></canvas>
+            </div>
+        </section>
+
+        <section class="about-author">
+            <h2>Sobre o projeto</h2>
+
+            <p class="highlight">
+                Este painel foi desenvolvido por <strong>Marília Pereira</strong>, mestre em
+                <strong>Saúde Pública</strong> pela USP e graduanda em <strong>Ciência de Dados</strong>,
+                com interesse em <strong>análise de dados</strong>, <strong>visualização</strong> e
+                <strong>tecnologia aplicada à vigilância epidemiológica</strong>.
+            </p>
+            <p>
+                Os dados apresentados foram obtidos a partir dos exames laboratoriais realizados pelo
+                <strong>Instituto Adolfo Lutz</strong>, referentes à vigilância da
+                <strong>Leishmaniose Visceral Canina</strong> na Região Metropolitana de São Paulo e foram utilizados originalmente em pesquisa acadêmica de pós-graduação.
+                
+            </p>
+            <a class="dissertation-link"
+               href="https://www.teses.usp.br/teses/disponiveis/6/6143/tde-11082025-153024/en.php"
+               target="_blank" rel="noopener noreferrer">
+                📄 Leishmaniose visceral canina na RMSP: ocorrência, distribuição geográfica e análise de casos importados
+            </a>
+
+            <p>
+                O objetivo deste dashboard é transformar dados técnicos em uma ferramenta de
+                <strong>visualização acessível</strong>, contribuindo para a divulgação científica
+                e o apoio à tomada de decisão em saúde pública.
+            </p>
+
+            <div class="contact">
+                <h3>Contato</h3>
+                <ul>
+                    <li>🔗 <a href="https://www.linkedin.com/in/mariliaspereira" target="_blank">
+                        linkedin.com/in/mariliaspereira</a></li>
+                    <li>💻 <a href="https://github.com/mariliaspereira" target="_blank">
+                        github.com/mariliaspereira</a></li>
+                </ul>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
