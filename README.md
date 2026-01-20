@@ -47,6 +47,6 @@ O dashboard permite:
 
 ## 📁 Estrutura do projeto
 
-├── index.html      # Estrutura do dashboard
-├── style.css       # Estilos visuais
-├── script.js       # Lógica de dados e gráficos
+├── index.html      # Estrutura do dashboard  
+├── style.css       # Estilos visuais  
+├── script.js       # Lógica de dados e gráficos  
